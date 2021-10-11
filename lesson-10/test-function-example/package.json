@@ -1,0 +1,19 @@
+{
+  "name": "test-function-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node app",
+    "start:dev": "nodemon app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.2.4",  
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {}
+}

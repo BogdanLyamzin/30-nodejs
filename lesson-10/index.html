@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form id="add-product" action="" enctype="multipart/form-data">
+        <input name="file" type="file" multiple>
+        <button type="submit">Добавить товар</button>
+   </form>
+   <script>
+       const formAddProduct = document.getElementById("add-product");
+       formAddProduct.addEventListener("submit", function(e){
+           e.preventDefault();
+           const file = this.querySelector("[name=file]").files[0];
+           const data = new FormData();
+           data.append("file", file);
+        //    data.append("name", this.elements.name.value)
+       })
+   </script>
+</body>
+</html>
