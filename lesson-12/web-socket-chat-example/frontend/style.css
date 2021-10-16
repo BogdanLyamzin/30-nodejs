@@ -1,0 +1,37 @@
+.chat {
+    width: 242px;
+    margin-bottom: 15px;
+    border: 1px solid;
+}
+
+.chat p {
+    margin: 10px 5px 25px;
+}
+
+.enter-chat-message {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.you-chat-message {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.user-chat-message {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    background-color: lightskyblue;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        const ws = new WebSocket("ws://localhost:5000");
+        
+        ws.onopen = ()=> {
+            // console.log("Успешное подключение к серверу");
+        }
+
+        ws.onmessage = (e)=> {
+            console.log(e.data);
+            setTimeout(() => {
+                ws.send("Часть команды, часть корабля!")
+            }, 3000);
+        }
+
+    </script>
+</body>
+</html>
